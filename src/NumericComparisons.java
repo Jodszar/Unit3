@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.util.Scanner;
 public class NumericComparisons {
 
@@ -20,6 +21,12 @@ public class NumericComparisons {
         public static boolean isNonPositive(int num) {
             return num <= 0;
         }
+        public static boolean isFactor(int num, int num2) {
+            return num2%num==0;
+        }
+        public static boolean isMultiple(int num, int num2) {
+            return num % num2 == 0;
+        }
 
 
         public static void main(String[] args ) {
@@ -32,8 +39,9 @@ public class NumericComparisons {
         System.out.println(isNonNegative(num1));
         System.out.println(isNonPositive(num1));
 
+        System.out.println(isFactor(3,6));
+        System.out.println(isMultiple(6,3));
 
-        
 
     }
 }
