@@ -3,10 +3,10 @@ public class SlopeOfALine {
     public static String slope(int x1, int y1, int x2, int y2){
 
         if(x1==x2){
-            return "The line defined by the points (" +x1+ ", "+y1+") and ("+x2+ "," +y2+") is a vertical line and the slope is undefined.";
+            return "The line defined by the points (" +x1+ ", "+y1+") and ("+x2+ ", S" +y2+") is a vertical line and the slope is undefined.";
         }
         else{
-            return "The line define by the points (" +x1+ ", "+y1+") and ("+x2+ "," +y2+") has a slope of "+(double)(y2-y1)/(x2-x1);
+            return "The line defined by the points (" +x1+ ", "+y1+") and ("+x2+ ", " +y2+") has a slope of "+(double)(y2-y1)/(x2-x1);
 
         }
     }
